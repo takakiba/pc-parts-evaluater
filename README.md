@@ -42,7 +42,7 @@ python get_gpu_value_performance.py
 
 ## サンプル
 ### CPUのデータ
-![CPU]()
+![CPU](example_gif/CPU_VP_sample.gif)
 ### GPUのデータ
-![GPU]()
+![GPU](example_gif/GPU_VP_sample.gif)
 
