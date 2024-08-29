@@ -40,4 +40,9 @@ python get_gpu_price_list.py
 python get_gpu_value_performance.py
 ```
 
+## サンプル
+### CPUのデータ
+![CPU]()
+### GPUのデータ
+![GPU]()
 
