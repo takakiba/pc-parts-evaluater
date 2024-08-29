@@ -19,8 +19,8 @@ Python 3.9.19
 (全てpipで入ります)
 
 ## 使い方
-```python
 ### CPUについて確認する場合
+```python
 ### Passmark　ベンチマークスコアを取得する
 python get_passmark_scores.py
 ### 価格.comからCPUの最安価格を取得してくる
@@ -29,5 +29,14 @@ python get_cpu_price_list.py
 python get_cpu_value_performance.py
 ```
 
+### GPUについて確認する場合
+```python
+### 3DMark ベンチマークスコアを取得する
+python get_3dmark_scores.py
+### 価格.comからGPUの最安価格を取得してくる
+python get_gpu_price_list.py
+### 価格パフォーマンスをグラフ化する
+python get_gpu_value_performance.py
+```
 
 
