@@ -56,4 +56,10 @@ python get_gpu_value_performance.py
 - Beautiful Soupの使い方についてはこちらを参考にしました．
 [【Python】Beautiful Soupを使ってブログ記事のテキストを抜き出してみる](https://dev.classmethod.jp/articles/parse-my-article-using-beautiful-soup/)
 
+- スクレイピングをしたCPUベンチマーク，Passmarkの参照先です．
+[High End CPUs - Intel vs AMD](https://www.cpubenchmark.net/high_end_cpus.html)
+
+- スクレイピングをしたGPUベンチマーク，3DMarkの参照先です．
+[Best Graphics Cards](https://benchmarks.ul.com/compare/best-gpus?amount=0&sortBy=SCORE&reverseOrder=true&types=DESKTOP&minRating=0)
+
 
