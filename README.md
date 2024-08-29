@@ -12,11 +12,12 @@ Mac
 Python 3.9.19
 
 ## 必要なライブラリ
+(全てpipで入ります)
 - requests
 - bs4
 - pandas
 - plotly
-(全てpipで入ります)
+
 
 ## 使い方
 ### CPUについて確認する場合
