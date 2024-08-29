@@ -50,9 +50,10 @@ python get_gpu_value_performance.py
 ![GPU](example_gif/GPU_VP_sample.gif)
 
 ## 参考文献
-価格コムのスクレイピングについては丸々こちらを参考にしました．
-- [価格ドットコムをスクレイピングしてゲーミングPCを調査してみた（前編）](https://happy-shibusawake.com/web-scraping1/559/)
-Beautiful Soupの使い方についてはこちらを参考にしました．
-- [【Python】Beautiful Soupを使ってブログ記事のテキストを抜き出してみる](https://dev.classmethod.jp/articles/parse-my-article-using-beautiful-soup/)
+- 価格コムのスクレイピングについては丸々こちらを参考にしました．
+[価格ドットコムをスクレイピングしてゲーミングPCを調査してみた（前編）](https://happy-shibusawake.com/web-scraping1/559/)
+
+- Beautiful Soupの使い方についてはこちらを参考にしました．
+[【Python】Beautiful Soupを使ってブログ記事のテキストを抜き出してみる](https://dev.classmethod.jp/articles/parse-my-article-using-beautiful-soup/)
 
 
