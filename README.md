@@ -42,7 +42,10 @@ python get_gpu_value_performance.py
 
 ## サンプル
 ### CPUのデータ
+横軸が値段，縦軸がベンチマークスコアなので，左上に行くほどコスパがいいことになります．
 ![CPU](example_gif/CPU_VP_sample.gif)
 ### GPUのデータ
+縦軸横軸は同じですが，GPUの場合同じチップを載せた製品がたくさん存在するので，価格.com上の最安値と最高値をエラーバーで表現しています．
+プロットの点は平均値です．
 ![GPU](example_gif/GPU_VP_sample.gif)
 
