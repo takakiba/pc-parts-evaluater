@@ -8,7 +8,7 @@ PCパーツ選びをしていると，値段とスペックのバランスがど
 
 ## より詳しい解説記事
 
-https://qiita.com/takakiba/items/b8ab78b3aaf4536789c4
+[PythonにWEBスクレイピングをやらせてCPUやGPUのコストパフォーマンスをなるべく簡単に比較する - Qiita](https://qiita.com/takakiba/items/b8ab78b3aaf4536789c4)
 
 ## 制作環境
 Mac
