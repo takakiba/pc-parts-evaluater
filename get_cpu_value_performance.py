@@ -47,14 +47,46 @@ if __name__ == '__main__':
         else:
             print('{0} is not in Passmark data'.format(cpu_name))
 
-    df = pd.DataFrame({'CPU': cpu_list, 'Price':price_list, 'Passmark score':score_list, 'Vender': vender_list})
+    type_list = []
+    for cpu in cpu_list:
+        if 'Xeon' in cpu:
+            type_list.append('Intel (Xeon)')
+        elif 'EPYC' in cpu:
+            type_list.append('AMD (EPYC)')
+        elif 'Threadripper' in cpu:
+            type_list.append('AMD (Threadripper)')
+        elif 'Intel' in cpu:
+            type_list.append('Intel')
+        elif 'AMD' in cpu:
+            type_list.append('AMD')
+        else:
+            type_list.append('Other')
+
+    df = pd.DataFrame({
+        'CPU': cpu_list, 
+        'Price':price_list, 
+        'Passmark score':score_list, 
+        'Vender': vender_list, 
+        'Type': type_list
+    })
     df['Value performance'] = df['Passmark score'] / df['Price']
     df.sort_values(['Vender', 'Passmark score'], ascending=False, ignore_index=True, inplace=True)
     # print(df)
 
     df.to_csv(csv_output)
 
-    fig = df.plot.scatter(x='Price', y='Passmark score', color='Vender', hover_data='CPU')
+    fig = df.plot.scatter(
+        x='Price', y='Passmark score', 
+        color='Type', 
+        color_discrete_map = {
+            'Intel':'#1E90FF', 
+            'AMD':'#FF6347', 
+            'Intel (Xeon)':'#3CB371', 
+            'AMD (EPYC)':'#FF8C00', 
+            'AMD (Threadripper)':'#8B008B', 
+            'Other':'#BC8F8F'},
+        hover_data='CPU'
+    )
     fig.show()
 
     fig.write_html('{0}_{1}.html'.format(html_output_prefix, update_time_pr.strftime('%Y-%m-%d')))
