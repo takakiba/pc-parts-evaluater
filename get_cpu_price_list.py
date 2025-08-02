@@ -4,7 +4,7 @@ import time
 import pandas as pd
 import datetime
 
-target_cpu_socket = ['LGA1700', 'LGA1200', 'Socket AM5', 'Socket AM4', 'Socket sTR5', 'Socket sWRX8']
+target_cpu_socket = ['LGA1851', 'LGA1700', 'LGA1200', 'Socket AM5', 'Socket AM4', 'Socket sTR5', 'Socket sWRX8']
 csv_database = './CPU_prices.csv'
 
 

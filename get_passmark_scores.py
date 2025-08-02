@@ -10,8 +10,13 @@ def get_passmark_scores(output_csv):
     ### original passmark data page url
     html = 'https://www.cpubenchmark.net/high_end_cpus.html'
 
+    # url = "https://○○○○/○○○○/○○○○/"
+    dummy_user_agent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    # response = requests.get(url, headers={"User-Agent": dummy_user_agent})
+
+
     ### retrieve html text information
-    req = requests.get(html)
+    req = requests.get(html, headers={"User-Agent": dummy_user_agent})
     req.encoding = req.apparent_encoding
 
     # print(req.text)
